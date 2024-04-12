@@ -60,7 +60,7 @@ def extract_keypoints(results):
     return np.concatenate([pose, face, lh, rh])
 
 def load_model():
-    model = tf.keras.models.load_model('actionmodel.h5')
+    model = tf.keras.models.load_model('action.h5')
     return model
 
 colors = [(245,117,16), (117,245,16), (16,117,245), (235,215,0), (225,0,215), (60,225,50), (35,235,105), (235,20,155), (235,215,90), (225,115,80)]
